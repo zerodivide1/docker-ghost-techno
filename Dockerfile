@@ -9,7 +9,11 @@ ADD default-settings.json /ghost/core/server/data/default-settings.json
 RUN \
   cd /ghost/content/themes && \
   git clone https://github.com/mronemous/ghost-theme-techno.git && \
-  cd /ghost
+  cd /ghost && \
+  useradd ghost --home /ghost && \
+  rm -f /ghost-start
+
+ADD start.bash /ghost-start
 
 ENV NODE_ENV production
 
