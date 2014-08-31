@@ -37,13 +37,9 @@ if [[ -d "$OVERRIDE/$THEMES" ]]; then
 fi
 
 # Symlink theme config file.
-echo check theme config
 if [[ -f "$OVERRIDE/$THEME_CONFIG" ]]; then
-  echo Config exists
   rm -f "$THEMES/ghost-theme-techno/config.js"
-  echo remove config $?
   ln -s "$OVERRIDE/$THEME_CONFIG" "$THEMES/ghost-theme-techno/config.js"
-  echo symbollic link $?
 fi
 
 # Start Ghost
