@@ -11,6 +11,10 @@ RUN \
   git clone https://github.com/mronemous/ghost-theme-techno.git && \
   cd /ghost
 
+ENV NODE_ENV production
+
+VOLUME ["/data", "/ghost-override"]
+
 WORKDIR /ghost
 
 CMD ["bash", "/ghost-start"]
