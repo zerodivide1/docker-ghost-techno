@@ -10,7 +10,8 @@ RUN \
   cd /ghost/content/themes && \
   git clone -b devel https://github.com/zerodivide1/ghost-theme-techno.git && \
   cd /ghost && \
-  rm -f /ghost-start
+  rm -f /ghost-start && \
+  $(useradd ghost --home /ghost || true)
 
 ADD start.bash /ghost-start
 
