@@ -8,7 +8,7 @@ ADD default-settings.json /ghost/core/server/data/default-settings.json
 
 RUN \
   cd /ghost/content/themes && \
-  git clone -b devel https://github.com/zerodivide1/ghost-theme-techno.git && \
+  git clone -b prod https://github.com/zerodivide1/ghost-theme-techno.git && \
   cd /ghost && \
   rm -f /ghost-start && \
   $(useradd ghost --home /ghost || true)
