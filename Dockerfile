@@ -3,7 +3,7 @@
 FROM dockerfile/ghost
 MAINTAINER Sean Payne <seantpayne@gmail.com>
 
-ADD default-settings.json /ghost/core/server/data/default-settings.json
+ADD default-settings.patch /ghost/core/server/data/default-settings.patch
 
 RUN \
   cd /ghost/content/themes && \
