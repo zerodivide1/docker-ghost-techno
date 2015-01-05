@@ -1,0 +1,9 @@
+--- default-settings.json	2015-01-05 02:17:12.684919200 +0000
++++ default-settings2.json	2015-01-05 02:18:07.985441500 +0000
+@@ -75,5 +75,5 @@
+     "theme": {
+         "activeTheme": {
+-            "defaultValue": "casper"
++            "defaultValue": "techno"
+         }
+     },
