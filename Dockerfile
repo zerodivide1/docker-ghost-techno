@@ -6,6 +6,11 @@ MAINTAINER Sean Payne <seantpayne@gmail.com>
 ADD default-settings.patch /ghost/core/server/data/default-settings.patch
 
 RUN \
+  cd /ghost/core/server/data && \
+  patch < default-settings.patch && \
+  rm default-settings.patch
+
+RUN \
   cd /ghost/content/themes && \
   git clone -b prod https://github.com/zerodivide1/ghost-theme-techno.git && \
   cd /ghost && \
