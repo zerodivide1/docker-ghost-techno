@@ -3,7 +3,6 @@
 FROM dockerfile/ghost
 MAINTAINER Sean Payne <seantpayne@gmail.com>
 
-ADD index.replace.js /ghost/index.js
 ADD default-settings.json /ghost/core/server/data/default-settings.json
 
 RUN \
