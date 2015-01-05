@@ -38,8 +38,8 @@ fi
 
 # Symlink theme config file.
 if [[ -f "$OVERRIDE/$THEME_CONFIG" ]]; then
-  rm -f "$THEMES/ghost-theme-techno/config.js"
-  ln -s "$OVERRIDE/$THEME_CONFIG" "$THEMES/ghost-theme-techno/config.js"
+  rm -f "$THEMES/techno/assets/js/config.js"
+  ln -s "$OVERRIDE/$THEME_CONFIG" "$THEMES/techno/assets/js/config.js"
 fi
 
 # Start Ghost
