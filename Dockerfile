@@ -12,7 +12,7 @@ RUN \
 
 RUN \
   cd /ghost/content/themes && \
-  git clone -b prod https://github.com/zerodivide1/ghost-theme-techno.git && \
+  git clone -b prod https://github.com/zerodivide1/ghost-theme-techno.git techno && \
   cd /ghost && \
   rm -f /ghost-start && \
   $(useradd ghost --home /ghost || true)
