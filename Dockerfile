@@ -1,6 +1,6 @@
 # Blog dockerfile w/Techno Theme
 
-FROM dockerfile/ghost
+FROM zerodivide1/docker-ghost:0.5.7
 MAINTAINER Sean Payne <seantpayne@gmail.com>
 
 ADD default-settings.patch /ghost/core/server/data/default-settings.patch
